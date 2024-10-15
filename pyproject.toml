@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "photocounts"
+version = "0.1.0"
+description = ""
+authors = ["Roger Chylla <roger.chylla@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[project]
+name = "google_photos_album_scanner"
+version = "0.1.0"
+description = "A tool to scan Google Photos albums and count photos"
+dependencies = [
+    "google-auth",
+    "google-auth-oauthlib",
+    "google-auth-httplib2",
+    "google-api-python-client",
+    "pandas"
+]
+
